@@ -5,18 +5,10 @@ N_default = 2000
 
 #Returns the mean of a function in two variables over the unit square
 def naiveMean(f, N = N_default):
-    #print("here")
     S = 0
-    #test=0
     for k1 in range(0,N):
-        #test=0
         for k2 in range(0,N):
-            #print(k2)
-            #print(k1)
-            #print(N)
-            #test+=1
             S += f(k1/N, k2/N)
-            #print("S:",S)
             
     return S/N**2
 
