@@ -5,6 +5,7 @@ from Player_Functions import *
 
 epsilon = 4e-14
 
+#The reactive mean of a function f(pc,pd) over the unit square
 def naive_mean_f(pc, pd, f):
     f_specialized = lambda pdprm, secern : f(pc, pd, secern + pdprm, pdprm)
     first_half = integrate.nquad(f_specialized, [lambda secern : [- secern, 1], [-1, 0]], opts = {'epsabs' : epsilon})
