@@ -9,9 +9,11 @@ def pC(pc, pd, pcprm, pdprm):
 def pD(pc, pd, pcprm, pdprm):
     return pd
 
+#The degree to which I prioritize cooperating with cooperators over defectors
 def secern(pc, pd, pcprm, pdprm):
     return pc - pd
 
+#The degree to which you prioritize cooperating with cooperators over defectors
 def secernprm(pc, pd, pcprm, pdprm):
     return pcprm - pdprm
 
