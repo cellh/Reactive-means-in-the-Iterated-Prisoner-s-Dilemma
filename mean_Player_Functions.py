@@ -14,7 +14,7 @@ def mean_r(pc, pd):
     return pc - pd
 
 
-#The mean expected number of rounds before I defect against you, after we've both cooperated
+#The mean chance you defect against me before I defect, after we've both cooperated
 def mean_nice(pc, pd):
         if pc == 0:
             return 0
@@ -23,7 +23,7 @@ def mean_nice(pc, pd):
         else:
             return 1+(1-pc)*math.log(1-pc)/pc
 
-#The mean expected number of rounds before you defect against me, after we've both cooperated
+#The mean chance I defect against you before you defect, after we've both cooperated
 def mean_niceprm(pc, pd):
         if pc == 0:
             return 1
