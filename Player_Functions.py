@@ -29,6 +29,10 @@ def pDprm(pc, pd, pcprm, pdprm):
 def nice(pc, pd, pcprm, pdprm):
     return 1 - (1 - pc)/(1 - pc*pcprm)
 
+#The expected number of rounds before you defect against me, after we've both cooperated
+def niceprm(pc, pd, pcprm, pdprm):
+    return 1 - (1 - pcprm)/(1 - pc*pcprm)
+
 #The probability I cooperate in the stationary distribution
 def c(pc, pd, pcprm, pdprm):
     v = pc - pd
