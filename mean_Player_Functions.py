@@ -31,7 +31,6 @@ def mean_niceprm(pc, pd):
             return 0
         else:
             return 1-(1/pc)+((1/pc)-(1/(pc**2)))*math.log(1-pc)
-#            return -((1-pc)*math.log(1-pc)/(pc**2))-(pc-1)/(pc**2)+1
 
 #The mean probability I cooperate in the stationary distribution
 def mean_c(pc, pd):
