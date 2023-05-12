@@ -1,8 +1,8 @@
-#from scipy import integrate
+from scipy import integrate
 import math
 import random
-#from Player_Functions import *
-#from naive_mean_Player_Functions import *
+from Player_Functions import *
+from naive_mean_Player_Functions import *
 from mean_Player_Functions import *
 from Statistics_Functions import *
 from naive_Statistics_Functions import *
@@ -14,26 +14,20 @@ N = 5000
 for f in function_list:
     for g in function_list:
         print(f[1], g[1])
-#        print(cor(f[0],g[0]))
-#        print("Corr:",naiveCor(f[0],g[0], N))
+        print(cor(f[0],g[0]))
+        print("Corr:",naiveCor(f[0],g[0], N))
         print("Cov:",naiveCov(f[0],g[0], N))
-#    print(naive_stddev(f[0]))
-#    for n in range(2,5):
-#        print(n, naive_nth_central_moment(f[0], n))
+    print(naive_stddev(f[0]))
+    for n in range(2,5):
+        print(n, naive_nth_central_moment(f[0], n))
 
-#for f in function_list:
-#    print(f[1])
-#    print("Naive Mean: ",naiveMean(f[0],N))
-#    print("Naive StdDev: ",naiveStdDev(f[0],N))
+for f in function_list:
+    print(f[1])
+    print("Naive Mean: ",naiveMean(f[0],N))
+    print("Naive StdDev: ",naiveStdDev(f[0],N))
 
-    #print("Mean: ",mean(f[0]))
-    #print("StdDev: ",stddev(f[0]))   
+    print("Mean: ",mean(f[0]))
+    print("StdDev: ",stddev(f[0]))   
 
-#input("Done")
-
-#print(mean_piCC(1,1))
-#print(mean_piCD(1,1))
-#print(mean_piDC(1,1))
-#print(mean_piDD(1,1))
 
 
