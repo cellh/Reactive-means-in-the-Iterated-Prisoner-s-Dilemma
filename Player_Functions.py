@@ -25,11 +25,11 @@ def pCprm(pc, pd, pcprm, pdprm):
 def pDprm(pc, pd, pcprm, pdprm):
     return pdprm
 
-#The expected number of rounds before I defect against you, after we've both cooperated
+#The chance you defect against me before I defect, after we've both cooperated
 def nice(pc, pd, pcprm, pdprm):
     return 1 - (1 - pc)/(1 - pc*pcprm)
 
-#The expected number of rounds before you defect against me, after we've both cooperated
+#The chance I defect against you before you defect, after we've both cooperated
 def niceprm(pc, pd, pcprm, pdprm):
     return 1 - (1 - pcprm)/(1 - pc*pcprm)
 
